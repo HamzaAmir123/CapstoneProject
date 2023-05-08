@@ -1,0 +1,76 @@
+{
+ "id": 1,
+ "body": {
+  "part": [
+   {
+    "id": "Core",
+    "type": "CoreComponent",
+    "root": true,
+    "orientation": 0
+   },
+   {
+    "id": "Hip1",
+    "type": "PassiveHinge",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "Hip2",
+    "type": "PassiveHinge",
+    "root": false,
+    "orientation": 3
+   },
+   {
+    "id": "Wheel1",
+    "type": "ActiveWheel",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "Wheel2",
+    "type": "ActiveWheel",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "Nose",
+    "type": "IrSensor",
+    "root": false,
+    "orientation": 0
+   }
+  ],
+  "connection": [
+   {
+    "src": "Core",
+    "dest": "Hip1",
+    "srcSlot": 0,
+    "destSlot": 0
+   },
+   {
+    "src": "Core",
+    "dest": "Hip2",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "Core",
+    "dest": "Nose",
+    "srcSlot": 2,
+    "destSlot": 0
+   },
+   {
+    "src": "Hip1",
+    "dest": "Wheel1",
+    "srcSlot": 0,
+    "destSlot": 0
+   },
+   {
+    "src": "Hip2",
+    "dest": "Wheel2",
+    "srcSlot": 0,
+    "destSlot": 0
+   }
+  ]
+ },
+ "brain": {}
+}

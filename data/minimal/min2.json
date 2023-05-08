@@ -1,0 +1,64 @@
+{
+ "id": 2,
+ "body": {
+  "part": [
+   {
+    "id": "Core",
+    "type": "CoreComponent",
+    "root": true,
+    "orientation": 0
+   },
+   {
+    "id": "Hip1",
+    "type": "PassiveHinge",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "UpperLeg1",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "Hip2",
+    "type": "PassiveHinge",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "UpperLeg2",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   }
+  ],
+  "connection": [
+   {
+    "src": "Core",
+    "dest": "Hip1",
+    "srcSlot": 0,
+    "destSlot": 0
+   },
+   {
+    "src": "Core",
+    "dest": "Hip2",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "Hip1",
+    "dest": "UpperLeg1",
+    "srcSlot": 0,
+    "destSlot": 0
+   },
+   {
+    "src": "Hip2",
+    "dest": "UpperLeg2",
+    "srcSlot": 0,
+    "destSlot": 0
+   }
+  ]
+ },
+ "brain": {}
+}

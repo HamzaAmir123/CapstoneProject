@@ -1,0 +1,8 @@
+0 CoreComponentNoIMU Core 0
+	0 FixedBrick HeadMiddle 0
+		-1 ParametricJoint SensorJointMiddle 0
+			-1 IrSensor DistanceMiddle 0
+		-1 FixedBrick HeadRight 0
+			0 ActiveWheel RightWheel 0
+			0 ActiveHinge SensorJointRight 0
+				

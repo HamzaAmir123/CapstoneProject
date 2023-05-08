@@ -1,0 +1,239 @@
+{
+ "id": 1,
+ "body": {
+  "part": [
+   {
+    "id": "Core",
+    "type": "CoreComponentNoIMU",
+    "root": true,
+    "orientation": 0
+   },
+   {
+    "id": "HeadMiddle",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "SensorJointMiddle",
+    "type": "ParametricJoint",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "DistanceMiddle",
+    "type": "IrSensor",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "HeadRight",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "RightWheel",
+    "type": "ActiveWheel",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "SensorJointRight",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "DistaneRight",
+    "type": "IrSensor",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "HeadLeft",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "LeftWheel",
+    "type": "ActiveWheel",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "SensorJointLeft",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "DistanceLeft",
+    "type": "IrSensor",
+    "root": false,
+    "orientation": 0
+   },
+      {
+    "id": "Tail1",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "Tail2",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "PassiveWheelLeft",
+    "type": "PassiveWheel",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "PassiveWheelRight",
+    "type": "PassiveWheel",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "DistanceRear",
+    "type": "IrSensor",
+    "root": false,
+    "orientation": 1
+   }
+   ],
+    "connection": [
+   {
+    "src": "Core",
+    "dest": "HeadMiddle",
+    "srcSlot": 0,
+    "destSlot": 0
+   },
+   {
+    "src": "HeadMiddle",
+    "dest": "SensorJointMiddle",
+    "srcSlot": 0,
+    "destSlot": 0
+   },
+   {
+    "src": "SensorJointMiddle",
+    "dest": "DistanceMiddle",
+    "srcSlot": 0,
+    "destSlot": 0
+   },
+   {
+    "src": "HeadMiddle",
+    "dest": "HeadRight",
+    "srcSlot": 0,
+    "destSlot": 1
+   },
+   {
+    "src": "HeadRight",
+    "dest": "RightWheel",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "HeadRight",
+    "dest": "SensorJointRight",
+    "srcSlot": 1,
+    "destSlot": 2
+   },
+   {
+    "src": "SensorJointRight",
+    "dest": "DistanceRight",
+    "srcSlot": 2,
+    "destSlot": 0
+   },
+   {
+    "src": "HeadMiddle",
+    "dest": "HeadLeft",
+    "srcSlot": 0,
+    "destSlot": 2
+   },
+   {
+    "src": "HeadLeft",
+    "dest": "LeftWheel",
+    "srcSlot": 2,
+    "destSlot": 0
+   },
+   {
+    "src": "HeadLeft",
+    "dest": "SensorJointLeft",
+    "srcSlot": 2,
+    "destSlot": 1
+   },
+   {
+    "src": "SensorJointLeft",
+    "dest": "DistanceLeft",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "Core",
+    "dest": "Tail1",
+    "srcSlot": 0,
+    "destSlot": 1
+   },
+   {
+    "src": "Tail1",
+    "dest": "Tail2",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "Tail2",
+    "dest": "PassiveWheelLeft",
+    "srcSlot": 0,
+    "destSlot": 1
+   },
+   {
+    "src": "Tail2",
+    "dest": "PassiveWheelRight",
+    "srcSlot": 0,
+    "destSlot": 2
+   },
+   {
+    "src": "Tail2",
+    "dest": "DistanceRear",
+    "srcSlot": 0,
+    "destSlot": 0
+   }
+  ]
+ },
+ "brain": {
+  "neuron": [
+   {
+    "id": "Core-0",
+    "layer": "input",
+    "type": "simple",
+    "bodyPartId": "Core",
+    "ioId": 0,
+    "gain": 1.0
+   },
+   {
+    "id": "Wheel1-0",
+    "layer": "output",
+    "type": "rotation",
+    "bodyPartId": "LeftWheel",
+    "ioId": 0,
+    "phaseOffset": -0.33302232623100281,
+    "period": 1.0133523941040039,
+    "gain": 0.99855577945709229
+   },
+   {
+    "id": "Wheel2-0",
+    "layer": "output",
+    "type": "rotation",
+    "bodyPartId": "RightWheel",
+    "ioId": 0,
+    "phaseOffset": 0.45175594091415405,
+    "period": 1.0,
+    "gain": 0.99931710958480835
+   }
+  ]
+}
+}

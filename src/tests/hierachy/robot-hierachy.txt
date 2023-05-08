@@ -1,0 +1,27 @@
+# Slot Name ID Orientation
+
+0 CoreComponent Core 0
+  0 ActiveHinge Hip1 1
+		0 ActiveHinge myid1018 3
+			0 ActiveHinge myid1001 1
+				0 FixedBrick UpperLeg1 1
+					0 PassiveHinge myid1008 0
+						0 FixedBrick LowerLeg1 0
+							1 PassiveHinge myid1015 2
+							2 PassiveHinge myid1013 1
+								0 FixedBrick myid1014 1
+					1 FixedBrick myid1002 3
+	1 ActiveHinge Hip2 3
+		0 FixedBrick UpperLeg2 1
+			0 FixedBrick myid1005 1
+				2 ActiveHinge myid1003 1
+					0 ActiveHinge Knee2 0
+						0 ActiveHinge myid1007 3
+							0 FixedBrick myid1016 2
+								0 FixedBrick myid1009 3
+									0 PassiveHinge myid1010 0
+										0 FixedBrick myid1011 0
+											2 PassiveHinge myid1012 3
+	2 ActiveHinge Hip3 2
+		0 PassiveHinge myid1017 3
+	3 FixedBrick LowerLeg2 1

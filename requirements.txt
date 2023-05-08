@@ -1,0 +1,8 @@
+# Dependencies
+
+# Development
+setuptools
+# pytest
+
+# Runtime
+panda3d

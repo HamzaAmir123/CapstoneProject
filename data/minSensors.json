@@ -1,0 +1,28 @@
+{
+    "id": 1,
+    "body": {
+      "part": [
+        {
+          "id": "Core",
+          "type": "LightSensor",
+          "root": true,
+          "orientation": 3
+        },
+        {
+         "id": "Sensor1",
+         "type": "LightSensor",
+         "root": false,
+         "orientation": 0
+        }
+    ],
+    "connection": [
+      {
+        "src": "Core",
+        "dest": "Sensor1",
+        "srcSlot": 1,
+        "destSlot": 0
+      }
+    ]
+},
+"brain": {}
+}

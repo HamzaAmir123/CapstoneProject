@@ -1,0 +1,212 @@
+{
+ "id": 1,
+ "body": {
+  "part": [
+   {
+    "id": "Core",
+    "type": "CoreComponent",
+    "root": true,
+    "orientation": 0
+   },
+   {
+    "id": "HeadMiddle",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "SensorJointMiddle",
+    "type": "PassiveHinge",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "DistanceMiddle",
+    "type": "IrSensor",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "HeadRight",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "RightWheel",
+    "type": "ActiveWheel",
+    "root": false,
+    "orientation": 0,
+    "length": 0.04
+   },
+   {
+    "id": "SensorJointRight",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "DistanceRight",
+    "type": "IrSensor",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "HeadLeft",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "LeftWheel",
+    "type": "ActiveWheel",
+    "root": false,
+    "orientation": 0,
+    "length": 0.04
+   },
+   {
+    "id": "SensorJointLeft",
+    "type": "ActiveHinge",
+    "root": false,
+    "orientation": 0
+   },
+   {
+    "id": "DistanceLeft",
+    "type": "IrSensor",
+    "root": false,
+    "orientation": 0
+   },
+      {
+    "id": "Tail1",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "Tail2",
+    "type": "FixedBrick",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "PassiveWheelLeft",
+    "type": "PassiveWheel",
+    "root": false,
+    "orientation": 1,
+    "length": 0.04
+   },
+   {
+    "id": "PassiveWheelRight",
+    "type": "PassiveWheel",
+    "root": false,
+    "orientation": 0,
+    "length": 0.04
+   },
+   {
+    "id": "DistanceRear",
+    "type": "IrSensor",
+    "root": false,
+    "orientation": 0
+   }
+   ],
+    "connection": [
+   {
+    "src": "Core",
+    "dest": "HeadMiddle",
+    "srcSlot": 0,
+    "destSlot": 2
+   },
+   {
+    "src": "HeadMiddle",
+    "dest": "SensorJointMiddle",
+    "srcSlot": 1,
+    "destSlot": 1
+   },
+   {
+    "src": "SensorJointMiddle",
+    "dest": "DistanceMiddle",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "HeadMiddle",
+    "dest": "HeadRight",
+    "srcSlot": 3,
+    "destSlot": 1
+   },
+   {
+    "src": "HeadRight",
+    "dest": "RightWheel",
+    "srcSlot": 2,
+    "destSlot": 0
+   },
+   {
+    "src": "HeadRight",
+    "dest": "SensorJointRight",
+    "srcSlot": 0,
+    "destSlot": 2
+   },
+   {
+    "src": "SensorJointRight",
+    "dest": "DistanceRight",
+    "srcSlot": 2,
+    "destSlot": 0
+   },
+   {
+    "src": "HeadMiddle",
+    "dest": "HeadLeft",
+    "srcSlot": 2,
+    "destSlot": 2
+   },
+   {
+    "src": "HeadLeft",
+    "dest": "LeftWheel",
+    "srcSlot": 2,
+    "destSlot": 2
+   },
+   {
+    "src": "HeadLeft",
+    "dest": "SensorJointLeft",
+    "srcSlot": 1,
+    "destSlot": 1
+   },
+   {
+    "src": "SensorJointLeft",
+    "dest": "DistanceLeft",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "Core",
+    "dest": "Tail1",
+    "srcSlot": 1,
+    "destSlot": 1
+   },
+   {
+    "src": "Tail1",
+    "dest": "Tail2",
+    "srcSlot": 1,
+    "destSlot": 0
+   },
+   {
+    "src": "Tail2",
+    "dest": "PassiveWheelLeft",
+    "srcSlot": 2,
+    "destSlot": 1
+   },
+   {
+    "src": "Tail2",
+    "dest": "PassiveWheelRight",
+    "srcSlot": 3,
+    "destSlot": 2
+   },
+   {
+    "src": "Tail2",
+    "dest": "DistanceRear",
+    "srcSlot": 1,
+    "destSlot": 2
+   }
+  ]
+ },
+ "brain": {}
+}

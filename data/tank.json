@@ -1,0 +1,655 @@
+{
+  "id": 1,
+  "body": {
+    "part": [
+      {
+        "id": "Core",
+        "type": "CoreComponent",
+        "root": true,
+        "orientation": 0
+      },
+      {
+        "id": "Head1",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+        "id": "Head2",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+        "id": "Head3",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+        "id": "Head4",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+        "id": "Joint1",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+        "id": "Joint2",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+        "id": "Hinge1",
+        "type": "PassiveHinge",
+        "root": false,
+        "orientation": 0
+      },
+      {
+       "id": "Sensor1",
+       "type": "TouchSensor",
+       "root": false,
+       "orientation": 1
+      },
+      {
+        "id": "LeftLeg1",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+        "id": "LeftLeg2",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+       "id": "LeftWheel1",
+       "type": "ActiveWheel",
+       "root": false,
+       "orientation": 0,
+       "length": 0.04
+      },
+      {
+        "id": "LeftLeg3",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+        "id": "LeftLeg4",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+       "id": "LeftWheel2",
+       "type": "PassiveWheel",
+       "root": false,
+       "orientation": 0,
+       "length": 0.04
+      },
+      {
+        "id": "LeftLeg5",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+        "id": "LeftLeg6",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+       "id": "LeftWheel3",
+       "type": "ActiveWheel",
+       "root": false,
+       "orientation": 0,
+       "length": 0.04
+      },
+      {
+       "id": "Sensor2",
+       "type": "IrSensor",
+       "root": false,
+       "orientation":  0
+      },
+      {
+        "id": "LeftLeg7",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+        "id": "LeftLeg8",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+       "id": "LeftWheel4",
+       "type": "ActiveWheel",
+       "root": false,
+       "orientation": 0,
+       "length": 0.04
+      },
+      {
+        "id": "LeftLeg9",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+        "id": "LeftLeg10",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+       "id": "LeftWheel5",
+       "type": "PassiveWheel",
+       "root": false,
+       "orientation": 0,
+       "length": 0.04
+      },
+      {
+        "id": "LeftLeg11",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+        "id": "LeftLeg12",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+       "id": "LeftWheel6",
+       "type": "ActiveWheel",
+       "root": false,
+       "orientation": 0,
+       "length": 0.04
+      },
+      {
+       "id": "Sensor3",
+       "type": "IrSensor",
+       "root": false,
+       "orientation": 2
+      },
+      {
+        "id": "Joint3",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+        "id": "Joint4",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+        "id": "Hinge2",
+        "type": "PassiveHinge",
+        "root": false,
+        "orientation": 0
+      },
+      {
+       "id": "Sensor4",
+       "type": "TouchSensor",
+       "root": false,
+       "orientation": 0,
+       "length": 0.04
+      },
+      {
+        "id": "RightLeg1",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+        "id": "RightLeg2",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+       "id": "RightWheel1",
+       "type": "ActiveWheel",
+       "root": false,
+       "orientation": 0,
+       "length": 0.04
+      },
+      {
+        "id": "RightLeg3",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+        "id": "RightLeg4",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+       "id": "RightWheel2",
+       "type": "PassiveWheel",
+       "root": false,
+       "orientation": 0,
+       "length": 0.04
+      },
+      {
+        "id": "RightLeg5",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+        "id": "RightLeg6",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+       "id": "RightWheel3",
+       "type": "ActiveWheel",
+       "root": false,
+       "orientation": 0,
+       "length": 0.04
+      },
+      {
+       "id": "Sensor5",
+       "type": "IrSensor",
+       "root": false,
+       "orientation": 0
+      },
+      {
+        "id": "RightLeg7",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+        "id": "RightLeg8",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+       "id": "RightWheel4",
+       "type": "ActiveWheel",
+       "root": false,
+       "orientation": 0,
+       "length": 0.04
+      },
+      {
+        "id": "RightLeg9",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+        "id": "RightLeg10",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+       "id": "RightWheel5",
+       "type": "PassiveWheel",
+       "root": false,
+       "orientation": 0,
+       "length": 0.04
+      },
+      {
+        "id": "RightLeg11",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+        "id": "RightLeg12",
+        "type": "FixedBrick",
+        "root": false,
+        "orientation": 0
+      },
+      {
+       "id": "RightWheel6",
+       "type": "ActiveWheel",
+       "root": false,
+       "orientation": 0,
+       "length": 4.00
+      },
+      {
+       "id": "Sensor6",
+       "type": "IrSensor",
+       "root": false,
+       "orientation": 0
+      }
+      
+    ],
+    "connection": [
+      {
+        "src": "Core",
+        "dest": "Head1",
+        "srcSlot": 0,
+        "destSlot": 0
+      },
+      {
+        "src": "Core",
+        "dest": "Head2",
+        "srcSlot": 1,
+        "destSlot": 0
+      },
+      {
+        "src": "Core",
+        "dest": "Head3",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "Core",
+        "dest": "Head4",
+        "srcSlot": 3,
+        "destSlot": 0
+      },
+      {
+        "src": "Head3",
+        "dest": "Joint1",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "Joint1",
+        "dest": "Joint2",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "Joint2",
+        "dest": "Hinge1",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "Hinge1",
+        "dest": "Sensor1",
+        "srcSlot": 0,
+        "destSlot": 0
+      },
+      {
+        "src": "Joint2",
+        "dest": "LeftLeg1",
+        "srcSlot": 0,
+        "destSlot": 0
+      },
+      {
+        "src": "LeftLeg1",
+        "dest": "LeftLeg2",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "LeftLeg2",
+        "dest": "LeftWheel1",
+        "srcSlot": 1,
+        "destSlot": 0
+      },
+      {
+        "src": "LeftLeg2",
+        "dest": "LeftLeg3",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "LeftLeg3",
+        "dest": "LeftLeg4",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "LeftLeg4",
+        "dest": "LeftWheel2",
+        "srcSlot": 1,
+        "destSlot": 0
+      },
+      {
+        "src": "LeftLeg4",
+        "dest": "LeftLeg5",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "LeftLeg5",
+        "dest": "LeftLeg6",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "LeftLeg6",
+        "dest": "LeftWheel3",
+        "srcSlot": 1,
+        "destSlot": 0
+      },
+      {
+        "src": "LeftLeg6",
+        "dest": "Sensor2",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "Joint2",
+        "dest": "LeftLeg7",
+        "srcSlot": 1,
+        "destSlot": 0
+      },
+      {
+        "src": "LeftLeg7",
+        "dest": "LeftLeg8",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "LeftLeg8",
+        "dest": "LeftWheel4",
+        "srcSlot": 0,
+        "destSlot": 0
+      },
+      {
+        "src": "LeftLeg8",
+        "dest": "LeftLeg9",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "LeftLeg9",
+        "dest": "LeftLeg10",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "LeftLeg10",
+        "dest": "LeftWheel5",
+        "srcSlot": 0,
+        "destSlot": 0
+      },
+      {
+        "src": "LeftLeg10",
+        "dest": "LeftLeg11",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "LeftLeg11",
+        "dest": "LeftLeg12",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "LeftLeg12",
+        "dest": "LeftWheel6",
+        "srcSlot": 0,
+        "destSlot": 0
+      },
+      {
+        "src": "LeftLeg12",
+        "dest": "Sensor3",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "Head4",
+        "dest": "Joint3",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "Joint3",
+        "dest": "Joint4",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "Joint4",
+        "dest": "Hinge2",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "Hinge2",
+        "dest": "Sensor4",
+        "srcSlot": 0,
+        "destSlot": 0
+      },
+      {
+        "src": "Joint4",
+        "dest": "RightLeg1",
+        "srcSlot": 0,
+        "destSlot": 0
+      },
+      {
+        "src": "RightLeg1",
+        "dest": "RightLeg2",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "RightLeg2",
+        "dest": "RightWheel1",
+        "srcSlot": 1,
+        "destSlot": 0
+      },
+      {
+        "src": "RightLeg2",
+        "dest": "RightLeg3",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "RightLeg3",
+        "dest": "RightLeg4",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "RightLeg4",
+        "dest": "RightWheel2",
+        "srcSlot": 1,
+        "destSlot": 0
+      },
+      {
+        "src": "RightLeg4",
+        "dest": "RightLeg5",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "RightLeg5",
+        "dest": "RightLeg6",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "RightLeg6",
+        "dest": "RightWheel3",
+        "srcSlot": 1,
+        "destSlot": 0
+      },
+      {
+        "src": "RightLeg6",
+        "dest": "Sensor5",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "Joint4",
+        "dest": "RightLeg7",
+        "srcSlot": 1,
+        "destSlot": 0
+      },
+      {
+        "src": "RightLeg7",
+        "dest": "RightLeg8",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "RightLeg8",
+        "dest": "RightWheel4",
+        "srcSlot": 0,
+        "destSlot": 0
+      },
+      {
+        "src": "RightLeg8",
+        "dest": "RightLeg9",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "RightLeg9",
+        "dest": "RightLeg10",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "RightLeg10",
+        "dest": "RightWheel5",
+        "srcSlot": 0,
+        "destSlot": 0
+      },
+      {
+        "src": "RightLeg10",
+        "dest": "RightLeg11",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "RightLeg11",
+        "dest": "RightLeg12",
+        "srcSlot": 2,
+        "destSlot": 0
+      },
+      {
+        "src": "RightLeg12",
+        "dest": "RightWheel6",
+        "srcSlot": 0,
+        "destSlot": 0
+      },
+      {
+        "src": "RightLeg12",
+        "dest": "Sensor6",
+        "srcSlot": 2,
+        "destSlot": 0
+      }
+
+    ]
+  },
+  "brain": {}
+}

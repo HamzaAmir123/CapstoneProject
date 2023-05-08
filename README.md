@@ -1,1 +1,70 @@
-# CapstoneProject
+# Getting Started
+
+Welcome to the RoboVIz application. The purpose of this project is to provide robotics researchers with a local 3D visualisation tool which will allow them to simulate robotic swarms without large investment into physical experiments. Our intention is to provide an approachable, lightweight and customisable tool which does not seek to replace the use of RoboGen but instead provide a stepping stone into the world of robotics visualisation.
+
+## Modes of Use
+
+As discussed earlier, our intention was to design the RoboViz application to be used by both experienced robotics researchers as well as those new to the field, possibly even computing in some respects. Because of this we have created 2 modes of use. Firstly a command line interface, that allows quick access to the applications features through various command line flags and parameters. Secondly, a basic GUI for users who might be uncomfortable using the command line to interact with the application.
+
+## Installing and Initialising RoboViz
+
+After downloading the RoboViz repo, run the command **make install**  to initialise the python virtual environment. This will ensure all dependencies and necessary packages are installed within the current folder location. One installed, run the command **. venv/bin/activate** to activate the virtual environment.
+
+## Command Line Interface
+
+Once the virtual environment is active you will have access to all available RoboViz functionality. Run the command **roboviz -h** to have available command line arguments printed to the terminal. These commands can be used to run specific features within the RoboViz application without having to bring up the GUI. Below we list a few interesting combinations to copy-paste for your convenience.
+
+| Command | Description |
+|---|---|
+| roboviz -c config/single/config.txt -p config/single/positions.txt -d data/cart.json | This will load a single instance of the cart type model. Note that order of each file does not matter, but must be preceded by the appropriate flag (-c, -p or -d). |
+| roboviz -l | This will print available saved models to the terminal. |
+| roboviz -L starfish | This will load a saved model, in this case the starfish. |
+| roboviz -C help | The -C flag enables you to run GUI commands from the terminal. In this case, the GUI will be rendered and available commands printed to the console. |
+|roboviz -c config/stress/single/config900.txt -p config/stress/single/positions900.txt -d data/cart.json | This will replicate one of our stress tests with 900 robots. Other available numbers to test your machine are 10000 and 90000. To run these make sure to edit the necessary numbers in the config and positions file paths.
+
+
+
+
+## Graphical User Interface
+
+If you wish to use the GUI instead of relying on the command line parameters, you can just run the command roboviz if you have correctly activated the virtual environment (see section on getting started) - alternatively run the command **make run**. This will bring up the RoboViz GUI with an empty environment. Pressing i will activate the console across the bottom of the application (Note this must be pressed each time you want to enter a command into the console). This is the primary access a user has to RoboViz functionality when using the GUI. Typing help and pressing enter will list the available console commands. Below we list a few( with their descriptions and how to use them) to try out.
+
+| Console Command | Description                                               | Usage                                          |   |   |
+|-----------------|-----------------------------------------------------------|------------------------------------------------|---|---|
+| clear           | Removes all robots and terrain and closes the environment | clear                                          |   |   |
+| save            | Saves the current environment to disk as a Pickle file    | save [name]                                    |   |   |
+| load            | Loads an environment by name (searched in data directory) | load [name]                                    |   |   |
+| list            | Lists all the saved environments                          | list                                           |   |   |
+| open            | Open a model given the configuration file parameters      | open [config-path] [position-path] [data-path] |   |   |
+| focus           | Focus on a  robot given an id.                            | focus [robot-id]                               |   |   |
+| unfocus         | Display all robots                                        | unfocus                                        |   |   |
+| hide            | Hides all rendered objects.                               | hide                                           |   |   |
+| show            | Show all rendered objects                                 | show                                           |   |   |
+| rebuild         | Rebuilds the environment under the current configuration  | rebuild
+
+
+## Saving and Loading
+
+Once the RoboViz GUI has loaded you will notice “Untitled Environment” at the top left. This is where models can be **saved** by entering a new name and pressing enter - the console will respond noting the model has been saved. You can view previously saved models with the command **list**. If you would like to pull up one of these models use the command **load [model name]**.
+
+
+## Interacting with a Rendered Model
+
+Once a model is rendered you can interact with it by using the following key bindings.
+
+
+|     KEY     |                USE               |     KEY     |                  USE                  |
+|:-----------:|:--------------------------------:|:-----------:|:-------------------------------------:|
+|      -      |             Zoom out             |      i      | Activate console input box in the app |
+|      =      |              Zoom in             |  Control-l  |          Clear the UI console         |
+|      k      |        Move camera upwards       | Shift-enter |         Focus onto UI console         |
+|      j      |       Move camera downwards      |      q      |                Exit app               |
+| h           | Rotate camera to left            | x           | Clear environment screen              |
+| l           | Rotate camera to right           | Escape      | Exit UI console                       |
+| Arrow up    | Move camera upwards              | Tab         | Autocomplete user entry               |
+| Arrow down  | Move camera downwards            | w           | Move in positive y- axis direction    |
+| Arrow left  | Rotate camera to left            | a           | Move in negative x-axis direction     |
+| Arrow right | Rotate camera to left            | s           | Move in negative y-axis direction     |
+| r           | Reset camera to default position | d           | Move in positive x- axis direction    |
+| Shift-r     | Rebuild current system           | Control -j  | Zoom out                              |
+| Control-k   | Zoom in                          |             |                                       |

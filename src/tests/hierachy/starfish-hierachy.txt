@@ -1,0 +1,30 @@
+# Slot Name ID Orientation
+
+0 CoreComponent Core 0
+	0 ActiveHinge Hip1 1
+		0 FixedBrick UpperLeg1 1
+			0 ActiveHinge Knee1 0
+				0 FixedBrick LowerLeg1 0
+	1 ActiveHinge Hip2 3
+		0 FixedBrick UpperLeg2 1
+			0 ActiveHinge Knee2 0
+				0 FixedBrick LowerLeg2 0
+	2 ActiveHinge Hip3 0
+		0 FixedBrick UpperLeg3 1
+			0 ActiveHinge Knee3 0
+				0 FixedBrick LowerLeg3 0
+	3 ActiveHinge Hip4 0
+		0 FixedBrick UpperLeg4 1
+			0 ActiveHinge Knee4 0
+				0 FixedBrick LowerLeg4 0
+
+
+
+Hip1 0 oscillator 1.000011920928955 -0.2227141112089157 0.9996347427368164
+Hip2 0 oscillator 1.0000256299972534 0.35126936435699463 0.9973043203353882
+Hip3 0 oscillator 1.000304102897644 -0.1550014615058899 0.9989302158355713
+Hip4 0 oscillator 1.0000009536743164 0.286795049905777 0.9990827441215515
+Knee1 0 oscillator 1.0000027418136597 -0.8802959322929382 0.9999924898147583
+Knee2 0 oscillator 1.0001150369644165 0.9083247184753418 0.8836674094200134
+Knee3 0 oscillator 1.013352394104004 -0.3330223262310028 0.9985557794570923
+Knee4 0 oscillator 1.0 0.45175594091415405 0.9993171095848083
